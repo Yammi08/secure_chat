@@ -1,0 +1,35 @@
+<%- contentFor('main') %>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <div class="d-flex adjust-space">
+      <span class="navbar-text me-3 text-white adjust-space text-nav">
+        <p>
+          Bienvenido/a, <%= username%>
+        </p>
+      </span>
+    <div class="button-nav">
+        <a href="/logout" class="btn btn-outline-light btn-sm ">Cerrar sesión</a>
+    </div>
+    
+    </div>
+  </div>
+</nav>
+<div class="chat-box">
+  <div class="chat-messages" id="chatMessages">
+    <div id="output"></div>
+  </div>
+  <div class="chat-input">
+    <form id="form" method="dialog" id="chatForm">
+      <input type="text" class="form-control" id="input" placeholder="Escribe un mensaje..." required  autocomplete="off">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+</div>
+
+
+<%- contentFor('script')%>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/chat.js"></script>
+
+<%- contentFor('top')%>
+<link rel="stylesheet" href="css/chat.css">

@@ -1,0 +1,20 @@
+    body {
+      background-color: #f8f9fa;
+      height: 100vh;
+    }
+    .login-container {
+      max-width: 400px;
+      margin: auto;
+      padding-top: 100px;
+    }
+    .card {
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+.login-container{
+    height: 100vh;
+    align-content: center;
+    position: relative;
+    top: -100px
+}

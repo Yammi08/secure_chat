@@ -1,0 +1,21 @@
+body {
+    background-color: #f1f3f5;
+    height: 100vh;
+}
+.register-container {
+    max-width: 500px;
+    margin: auto;
+    padding-top: 60px;
+}
+.card {
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.register-container
+{
+    height: 100vh;
+    align-content: center;
+    position: relative;
+    top: -50px
+}

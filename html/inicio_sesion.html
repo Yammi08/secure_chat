@@ -1,0 +1,29 @@
+<%- contentFor('main') %>
+  <%- include('./errors.html') -%>
+  
+  <div class="login-container">
+    <div class="card">
+      <h2 class="text-center mb-4">Iniciar sesión</h2>
+      <form method="post">
+        <div class="mb-3">
+          <label for="user" class="form-label">usuario</label>
+          <input type="user" name="user" class="form-control" id="user" placeholder="usuario" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" name="password" class="form-control" id="password" placeholder="Contraseña" required>
+        </div>
+        
+        <button type="submit" class="btn btn-primary w-100">ingresar</button>
+      </form>
+
+    </div>
+    <div class="text-center mt-3">
+    <p>¿No tienes cuenta? <a href="/register">Regístrate</a></p>
+    </div>
+  </div>
+
+<%- contentFor('script')%>
+
+<%- contentFor('top')%>
+<link rel="stylesheet" href="css/iniciar_sesion.css">

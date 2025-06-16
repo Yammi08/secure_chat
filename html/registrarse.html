@@ -1,0 +1,41 @@
+<%- contentFor('main') %>
+  <%- include('./errors.html') -%>
+  <div class="register-container">
+    <div class="card">
+      <h2 class="text-center mb-4">Crear cuenta</h2>
+      <form method="post">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name"name="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="last_name" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="last_name"  name="last_name" required>
+        </div>
+        <div class="mb-3">
+          <label for="username" class="form-label">nombre de usuario</label>
+          <input type="text" class="form-control" id="username"  name="user" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Confirmar contraseña</label>
+          <input type="password" class="form-control" id="confirmPassword"  name="password_again" required>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Registrarse</button>
+      </form>
+    </div>
+    <div class="text-center mt-3">
+      <p>ya tienes cuenta? <a href="/login">Inicia sesion</a></p>
+    </div>
+  </div>
+<%- contentFor('script')%>
+
+<%- contentFor('top')%>
+<link rel="stylesheet" href="css/register.css">
