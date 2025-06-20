@@ -1,5 +1,6 @@
 # Secure_chat
-### funciones
+es un chat de mensajeria instantanea que permite la coneccion por medio del protocolo websocket el cual es una conexion bidireccional que permite a multiples usuarios comunicarse unos con otros
+## funciones
 desarrollo de un chat web que permite conectar a multiples usuarios en un canal global, este cuenta con:
 1. conexion bidireccional en un chat global usando websocket como libreria `socket.io` la cual se implementa tanto en el lado del cliente como en el del servidor.
 2. encriptacion de contraseñas usando el algoritmo Blowfish proporcionado por `bcrypt` para garantizar el almacenamiento seguro.
